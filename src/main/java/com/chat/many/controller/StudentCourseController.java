@@ -30,6 +30,12 @@ public class StudentCourseController {
         return studentRepository.save(student);
 
     }
+    
+     @GetMapping("/welcome")
+    public String welcome()
+    {
+        return "Welcome Sameer";
+    }
 
 
     @GetMapping
